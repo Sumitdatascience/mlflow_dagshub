@@ -11,8 +11,6 @@ import seaborn as sns
 import dagshub
 dagshub.init(repo_owner='Sumitdatascience', repo_name='mlflow_dagshub', mlflow=True)
 
-# import dagshub
-# dagshub.init(repo_owner='campusx-official', repo_name='mlflow-dagshub-demo', mlflow=True)
 
 mlflow.set_tracking_uri("https://dagshub.com/Sumitdatascience/mlflow_dagshub.mlflow")
 
@@ -25,8 +23,8 @@ y = iris.target
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Define the parameters for the Random Forest model
-max_depth = 5
-n_estimator = 15
+max_depth = 2
+n_estimator = 10
 
 # apply mlflow
 
